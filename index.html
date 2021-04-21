@@ -212,7 +212,7 @@
 					</div>
 					<div class="col-12">
 						<div class="card-wrap">
-							<h2 class="card-title">Visits</h2>
+							<h2 class="card-title">5 Visitors</h2>
 
 							<table id="visit" class="table-wrapper">
 								<thead>
@@ -294,6 +294,12 @@
 							</table>
 						</div>
 					</div>
+					<div class="col-12">
+						<div class="card-wrap">
+							<h2 class="card-title">Visitors</h2>
+							<div id="most_viewed"></div>
+						</div>
+					</div>
 					<div class="col-lg-6 col-12">
 						<div class="card-wrap">
 							<h2 class="card-title">Chart 1</h2>
@@ -304,12 +310,6 @@
 						<div class="card-wrap">
 							<h2 class="card-title">Chart 2</h2>
 							<div id="chart2"></div>
-						</div>
-					</div>
-					<div class="col-12">
-						<div class="card-wrap">
-							<h2 class="card-title">Chart 3</h2>
-							<div id="most_viewed"></div>
 						</div>
 					</div>
 				</div>
@@ -501,7 +501,7 @@
 						headerFormat: '<h6 className="tooltipTitle">{point.key}</h6><ul className="chatTooltip">',
 						pointFormat:
 							'<li><span style="color:{series.color};padding:0">{series.name}: </span>' +
-							'<span style="padding:0"><b>{point.y:.1f} $</b></span></li>',
+							'<span style="padding:0"><b>{point.y:.1f}</b></span></li>',
 						footerFormat: '</ul>',
 						shared: true,
 						useHTML: true,
