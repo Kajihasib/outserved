@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+		<link rel="stylesheet" href="assets/css/materialize.min.css" />
+		<link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="assets/css/default.css" />
+		<link rel="stylesheet" href="assets/css/jquery.scrollbar.css" />
+		<link rel="stylesheet" href="assets/css/dataTables.min.css" />
+		<link rel="stylesheet" href="assets/css/theme.css" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Location</title>
+	</head>
+
+	<body class="bg-grey">
+		<div class="backdrop-body-admin"></div>
+		<div class="admin-container d-flex flex-wrap">
+			<!-- sidemenu area  -->
+			<div class="sidebar-nav">
+				<span class="material-icons cancel-menu"> cancel </span>
+				<div class="logo">
+					<a href="index.html">
+						<img src="assets/images/logo.png" alt="logo" />
+					</a>
+				</div>
+				<ul class="collapsible mainmenu-wrap">
+					<li class="menuitem">
+						<a href="index.html">
+							<span class="material-icons icon">dashboard</span>
+							<span class="name">Dashboard</span>
+						</a>
+					</li>
+					<li class="menuitem">
+						<a href="geofence-visits.html">
+							<span class="material-icons icon"> view_list </span>
+							<span class="name">Geofence Visits</span>
+						</a>
+					</li>
+
+					<li class="menuitem active">
+						<a href="locations.html">
+							<span class="material-icons icon">location_on</span>
+							<span class="name">locations</span>
+						</a>
+					</li>
+
+					<li class="menuitem">
+						<a href="coupons.html">
+							<span class="material-icons icon"> redeem </span>
+							<span class="name">coupons</span>
+						</a>
+					</li>
+					<li class="menuitem">
+						<a href="messages.html">
+							<span class="material-icons icon">email</span>
+							<span class="name">messages</span>
+						</a>
+					</li>
+					<li class="menuitem-collapsible">
+						<div class="collapsible-header">
+							<span class="material-icons icon">list</span>
+							<span class="name d-flex align-items-center"
+								>Dropdown
+								<span class="material-icons"> arrow_drop_down </span>
+							</span>
+						</div>
+						<div class="collapsible-body">
+							<ul>
+								<li>
+									<a href="inbox.html"
+										>Option 1
+										<span>2</span>
+									</a>
+								</li>
+								<li>
+									<a href="inbox.html">Option 2</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<!-- sidemenu area  -->
+
+			<div class="main-container">
+				<header class="header-area">
+					<span class="material-icons d-lg-none d-block responsive-menu-admin"> menu </span>
+					<div class="profile-info">
+						<img class="image" src="assets/images/avatar.svg" alt="" />
+						<div class="content">
+							<h4>Kajihasib</h4>
+							<span>tinbleco@gmail.com </span>
+						</div>
+						<ul class="profile-dropdown">
+							<li>
+								<a href="profile.html">
+									<span class="material-icons"> person </span>
+									Profile
+								</a>
+							</li>
+							<li>
+								<a href="logout.html">
+									<span class="material-icons"> logout </span>
+									Logout
+								</a>
+							</li>
+						</ul>
+					</div>
+				</header>
+				<div class="main-content">
+					<div class="row">
+						<div class="col-lg-6 offset-lg-3">
+							<div class="card-wrap">
+								<h2 class="card-title">New Message</h2>
+								<form id="new_message">
+									<div class="row">
+										<div class="col-12">
+											<div class="input-field">
+												<label for="title">Title</label>
+												<input placeholder="Title here" id="title" name="title" type="text" />
+											</div>
+										</div>
+										<div class="col-12">
+											<div class="input-field">
+												<label for="time">Time the message will be sent</label>
+												<input id="time" name="time" type="time" />
+											</div>
+										</div>
+										<div class="col-12">
+											<div class="select-style">
+												<label for="location">Location</label>
+												<select class="material-select" name="location" id="location">
+													<option selected>Select Location</option>
+
+													<option value="1">Texas Tech Hotspot</option>
+													<option value="1">Texas Tech South Campus Hotspot</option>
+													<option value="1">Cricket’s Avenue —— Avenue N</option>
+												</select>
+											</div>
+										</div>
+										<div class="col-12">
+											<div class="select-style">
+												<label for="repeat">Repeat </label>
+												<select class="material-select" name="repeat" id="repeat">
+													<option selected>Select Repeat</option>
+													<option value="1">Daily</option>
+													<option value="1">Weekly</option>
+													<option value="1">Monthly</option>
+													<option value="1">Yearly</option>
+												</select>
+											</div>
+										</div>
+										<div class="col-12">
+											<div class="input-field">
+												<label for="message">Message</label>
+												<textarea
+													name="message"
+													id="message"
+													class="materialize-textarea"
+												></textarea>
+											</div>
+										</div>
+										<div class="col-12">
+											<button class="btnStyle waves-effect lgBtn w-100">Submit</button>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<footer class="footer-area">
+					<p>© Copyright . Outserved All Rights Reserved.</p>
+					<ul class="footer-menu">
+						<li><a href="#">Terms & Conditions </a></li>
+						<li><a href="#">Privacy Policy</a></li>
+					</ul>
+				</footer>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="assets/js/materialize.min.js"></script>
+		<script type="text/javascript" src="assets/js/select2.min.js"></script>
+		<script type="text/javascript" src="assets/js/jquery.validate.min.js"></script>
+		<script type="text/javascript" src="assets/js/jquery.scrollbar.min.js"></script>
+		<script type="text/javascript" src="assets/js/highcharts.min.js"></script>
+		<script type="text/javascript" src="assets/js/dataTables.min.js"></script>
+		<script type="text/javascript" src="assets/js/apexcharts.min.js"></script>
+		<script type="text/javascript" src="assets/js/datatable.responsive.min.js"></script>
+		<script type="text/javascript" src="assets/js/scripts.js"></script>
+		<script>
+			$('#new_message').validate({
+				errorElement: 'span',
+				errorClass: 'error-message',
+				rules: {
+					title: 'required',
+					time: 'required',
+					location: 'required',
+					repeat: 'required',
+					message: 'required',
+				},
+				messages: {
+					title: 'title can not be empty',
+					time: 'time can not be empty',
+					location: 'location can not be empty',
+					repeat: 'repeat can not be empty',
+					message: 'message can not be empty',
+				},
+			});
+		</script>
+	</body>
+</html>

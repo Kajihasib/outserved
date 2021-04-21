@@ -76,7 +76,7 @@ body [type='radio'].with-gap:checked + span:after {
 
 body .input-field {
 	margin-top: 0;
-	margin-bottom: 20px;
+	margin-bottom: 15px;
 }
 
 body .input-field input:not([type]),
@@ -168,39 +168,11 @@ body .input-field.input-password .material-icons:hover {
 }
 
 body .input-field label {
-	-webkit-transform: translateY(21px);
-	transform: translateY(21px);
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
+	position: static;
 	font-size: 14px;
-	line-height: 12px;
-	color: #afafaf;
-	left: 10px;
-}
-
-body .input-field label span {
-	min-width: 50px;
-	background: #fff;
-	display: inline-block;
-	letter-spacing: 0px;
-	border-radius: 2px;
-	padding: 0px 15px;
-}
-
-body .input-field label.active {
-	z-index: 10;
-}
-
-body .input-field label.active span {
-	-webkit-transform: translateY(10px);
-	transform: translateY(10px);
-	font-size: 14px;
-	color: #ffc20d;
-	background: #fff;
+	color: #2e302a;
+	margin-bottom: 5px;
+	transform: translateY(0);
 }
 
 body .input-field span.error-message {
@@ -211,14 +183,14 @@ body .input-field span.error-message {
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
-	padding: 4px 10px;
+	padding: 8px 10px;
 	width: 100%;
 	color: #f44336;
 	background: rgba(244, 67, 54, 0.2);
 	font-size: 12px;
 	line-height: 14px;
 	border-radius: 2px;
-	margin-top: 5px;
+	margin-top: 2px;
 }
 
 body .input-field .iti {
@@ -356,6 +328,8 @@ body .select-style select:focus {
 .select-style .select-wrapper .dropdown-trigger:focus {
 	outline: none;
 	border-color: #ffc20d !important;
+	border-bottom: 1px solid #ffc20d !important;
+	box-shadow: none !important;
 }
 
 .select-style .select-wrapper .dropdown-content {
@@ -371,6 +345,10 @@ body .select-style select:focus {
 	padding: 11px 16px;
 	color: #707070;
 }
+.select-style label {
+	font-size: 14px;
+	color: #2e302a;
+}
 
 @media (max-width: 991px) {
 	.md-flex-revarce {
@@ -382,7 +360,7 @@ body .select-style select:focus {
 .btnStyle {
 	min-height: 40px;
 	min-width: 135px;
-	padding: 5px 25px 8px;
+	padding: 6px 25px;
 	background: #ffc20d;
 	display: -webkit-inline-box;
 	display: -ms-inline-flexbox;

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+		<link rel="stylesheet" href="assets/css/materialize.min.css" />
+		<link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="assets/css/default.css" />
+		<link rel="stylesheet" href="assets/css/jquery.scrollbar.css" />
+		<link rel="stylesheet" href="assets/css/dataTables.min.css" />
+		<link rel="stylesheet" href="assets/css/theme.css" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Location</title>
+	</head>
+
+	<body class="bg-grey">
+		<div class="backdrop-body-admin"></div>
+		<div class="admin-container d-flex flex-wrap">
+			<!-- sidemenu area  -->
+			<div class="sidebar-nav">
+				<span class="material-icons cancel-menu"> cancel </span>
+				<div class="logo">
+					<a href="index.html">
+						<img src="assets/images/logo.png" alt="logo" />
+					</a>
+				</div>
+				<ul class="collapsible mainmenu-wrap">
+					<li class="menuitem">
+						<a href="index.html">
+							<span class="material-icons icon">dashboard</span>
+							<span class="name">Dashboard</span>
+						</a>
+					</li>
+					<li class="menuitem">
+						<a href="geofence-visits.html">
+							<span class="material-icons icon"> view_list </span>
+							<span class="name">Geofence Visits</span>
+						</a>
+					</li>
+
+					<li class="menuitem">
+						<a href="locations.html">
+							<span class="material-icons icon">location_on</span>
+							<span class="name">locations</span>
+						</a>
+					</li>
+
+					<li class="menuitem active">
+						<a href="coupons.html">
+							<span class="material-icons icon"> redeem </span>
+							<span class="name">coupons</span>
+						</a>
+					</li>
+					<li class="menuitem">
+						<a href="messages.html">
+							<span class="material-icons icon">email</span>
+							<span class="name">messages</span>
+						</a>
+					</li>
+					<li class="menuitem-collapsible">
+						<div class="collapsible-header">
+							<span class="material-icons icon">list</span>
+							<span class="name d-flex align-items-center"
+								>Dropdown
+								<span class="material-icons"> arrow_drop_down </span>
+							</span>
+						</div>
+						<div class="collapsible-body">
+							<ul>
+								<li>
+									<a href="inbox.html"
+										>Option 1
+										<span>2</span>
+									</a>
+								</li>
+								<li>
+									<a href="inbox.html">Option 2</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<!-- sidemenu area  -->
+
+			<div class="main-container">
+				<header class="header-area">
+					<span class="material-icons d-lg-none d-block responsive-menu-admin"> menu </span>
+					<div class="profile-info">
+						<img class="image" src="assets/images/avatar.svg" alt="" />
+						<div class="content">
+							<h4>Kajihasib</h4>
+							<span>tinbleco@gmail.com </span>
+						</div>
+						<ul class="profile-dropdown">
+							<li>
+								<a href="profile.html">
+									<span class="material-icons"> person </span>
+									Profile
+								</a>
+							</li>
+							<li>
+								<a href="logout.html">
+									<span class="material-icons"> logout </span>
+									Logout
+								</a>
+							</li>
+						</ul>
+					</div>
+				</header>
+				<div class="main-content">
+					<div class="row">
+						<div class="col-lg-6 offset-lg-3">
+							<div class="card-wrap pr p-50">
+								<h2 class="card-title justify-content-center fs-24">Profile Info</h2>
+								<a class="waves-effect edit-profile-btn modal-trigger" href="#edit_profile"
+									><span class="material-icons"> edit </span></a
+								>
+								<div class="profile-wrapper">
+									<img class="profile-img" src="assets/images/avatar.svg" alt="tinbleadmin" />
+									<h3 class="fs-20">tinbleadmin</h3>
+									<ul class="profile-info-list">
+										<li>Username: tinbleadmin</li>
+										<li>Email: tinbleco@gmail.com</li>
+										<li>Coupon Code: 1122</li>
+									</ul>
+								</div>
+							</div>
+							<div class="card-wrap pr p-50">
+								<h2 class="card-title justify-content-center fs-24">Subscription Info</h2>
+								<a class="waves-effect edit-profile-btn modal-trigger" href="#subscription"
+									><span class="material-icons"> edit </span></a
+								>
+								<div class="profile-wrapper">
+									<h3 class="fs-20 mb-5 fw-500">My Plan:</h3>
+									<h4 class="fs-15 fw-500">Premium</h4>
+									<ul class="profile-info-list mb-30">
+										<li>Period Start: April 21 2021</li>
+										<li>Period End: May 21 2021</li>
+									</ul>
+									<h3 class="fs-20 mb-5 fw-500">My Card:</h3>
+									<h4 class="fs-15 fw-500">N/A</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<footer class="footer-area">
+					<p>© Copyright . Outserved All Rights Reserved.</p>
+					<ul class="footer-menu">
+						<li><a href="#">Terms & Conditions </a></li>
+						<li><a href="#">Privacy Policy</a></li>
+					</ul>
+				</footer>
+			</div>
+		</div>
+		<div id="edit_profile" class="modal modal-wrapper small-modal-wrapper">
+			<span class="material-icons modal-close">close</span>
+			<h2 class="fs-24 text-center text-color">Edit Business</h2>
+			<form id="edit_profile_form">
+				<div class="input-field">
+					<label for="usename">usename</label>
+					<input id="usename" name="usename" type="text" value="tinbleadmin" />
+				</div>
+				<div class="input-field">
+					<label for="name">Name</label>
+					<input id="name" name="name" type="text" value="tinbleadmin" />
+				</div>
+				<div class="input-field">
+					<label for="email">Email</label>
+					<input id="email" name="email" type="email" value="hasib.me1995@gmail.com" />
+				</div>
+				<div class="input-field">
+					<label for="email">Coupon Code</label>
+					<input id="code" name="code" type="text" class="number" value="12345" />
+				</div>
+				<div class="text-center">
+					<button class="btnStyle btnLg">Submit</button>
+				</div>
+			</form>
+		</div>
+		<div id="subscription" class="modal modal-wrapper small-modal-wrapper">
+			<span class="material-icons modal-close">close</span>
+			<h2 class="fs-24 text-center text-color">Update Card</h2>
+			<form id="paymentForm">
+				<div class="input-field">
+					<label>Name on card</label>
+					<input type="text" placeholder="Codex World" id="name_on_card" />
+				</div>
+				<div class="input-field">
+					<label>Card number</label>
+					<input type="text" placeholder="1234 5678 9012 3456" id="card_number" />
+				</div>
+				<div class="row">
+					<div class="col-md-6 col-12">
+						<div class="input-field">
+							<label>Expiry month</label>
+							<input type="text" placeholder="MM" maxlength="5" id="expiry_month" />
+						</div>
+					</div>
+					<div class="col-md-6 col-12">
+						<div class="input-field">
+							<label>Expiry year</label>
+							<input type="text" placeholder="YYYY" maxlength="5" id="expiry_year" />
+						</div>
+					</div>
+				</div>
+
+				<div class="input-field">
+					<label>CVV</label>
+					<input type="text" placeholder="123" maxlength="3" id="cvv" />
+				</div>
+			</form>
+		</div>
+		<script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="assets/js/materialize.min.js"></script>
+		<script type="text/javascript" src="assets/js/select2.min.js"></script>
+		<script type="text/javascript" src="assets/js/jquery.validate.min.js"></script>
+		<script type="text/javascript" src="assets/js/jquery.scrollbar.min.js"></script>
+		<script type="text/javascript" src="assets/js/highcharts.min.js"></script>
+		<script type="text/javascript" src="assets/js/dataTables.min.js"></script>
+		<script type="text/javascript" src="assets/js/apexcharts.min.js"></script>
+		<script type="text/javascript" src="assets/js/datatable.responsive.min.js"></script>
+		<script type="text/javascript" src="assets/js/scripts.js"></script>
+		<script>
+			$('#new_message').validate({
+				errorElement: 'span',
+				errorClass: 'error-message',
+				rules: {
+					title: 'required',
+					time: 'required',
+					location: 'required',
+					repeat: 'required',
+					message: 'required',
+				},
+				messages: {
+					title: 'title can not be empty',
+					time: 'time can not be empty',
+					location: 'location can not be empty',
+					repeat: 'repeat can not be empty',
+					message: 'description can not be empty',
+				},
+			});
+		</script>
+	</body>
+</html>

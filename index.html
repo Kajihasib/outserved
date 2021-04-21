@@ -85,6 +85,7 @@
 
 			<div class="main-container">
 				<header class="header-area">
+					<span class="material-icons d-lg-none d-block responsive-menu-admin"> menu </span>
 					<div class="profile-info">
 						<img class="image" src="assets/images/avatar.svg" alt="" />
 						<div class="content">
@@ -107,212 +108,251 @@
 						</ul>
 					</div>
 				</header>
-				<div class="welcome-wrapper d-flex flex-wrap align-items-center justify-content-between">
-					<div class="welcome-content">
-						<h4 class="fs-30 fw-600 color-white">welcome to our website</h4>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos necessitatibus quasi
-							voluptas quaerat officiis soluta!
-						</p>
+				<div class="main-content">
+					<div class="text-right mb-20">
+						<button class="btnStyle btnStyleOutline">
+							<span class="material-icons mr-5 mt-0"> refresh </span>Reload
+						</button>
 					</div>
-					<img class="welcome-img" src="assets/images/dashboard.svg" alt="dashboard" />
+					<div class="welcome-wrapper d-flex flex-wrap align-items-center justify-content-between">
+						<div class="welcome-content">
+							<h4 class="fs-30 fw-600 color-white">welcome to our website</h4>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos necessitatibus
+								quasi voluptas quaerat officiis soluta!
+							</p>
+						</div>
+						<img class="welcome-img" src="assets/images/dashboard.svg" alt="dashboard" />
+					</div>
+
+					<div class="row">
+						<div class="col-xl-4 col-md-6 col-12">
+							<div class="featured-card-wrap">
+								<span class="material-icons icon"> redeem </span>
+								<div class="content">
+									<h3>2104</h3>
+									<p>Total Used Coupons</p>
+								</div>
+								<button class="add-more-btn">
+									<span class="material-icons"> add </span>
+								</button>
+							</div>
+						</div>
+						<div class="col-xl-4 col-md-6 col-12">
+							<div class="featured-card-wrap">
+								<span class="material-icons icon"> favorite </span>
+								<div class="content">
+									<h3>0</h3>
+									<p>Total Favorites</p>
+								</div>
+								<button class="add-more-btn">
+									<span class="material-icons"> add </span>
+								</button>
+							</div>
+						</div>
+						<div class="col-xl-4 col-md-6 col-12">
+							<div class="featured-card-wrap">
+								<span class="material-icons icon"> schedule </span>
+								<div class="content">
+									<h3>0</h3>
+									<p>Total Favorites</p>
+								</div>
+								<button class="add-more-btn">
+									<span class="material-icons"> add </span>
+								</button>
+							</div>
+						</div>
+						<div class="col-xl-4 col-md-6 col-12">
+							<div class="featured-card-wrap">
+								<span class="material-icons icon"> tour </span>
+								<div class="content">
+									<h3>0</h3>
+									<p>Total Visits</p>
+								</div>
+								<button class="add-more-btn">
+									<span class="material-icons"> add </span>
+								</button>
+							</div>
+						</div>
+						<div class="col-xl-4 col-md-6 col-12">
+							<div class="featured-card-wrap">
+								<span class="material-icons icon"> location_on </span>
+								<div class="content">
+									<h3>0</h3>
+									<p>Geofence Entries</p>
+								</div>
+								<button class="add-more-btn">
+									<span class="material-icons"> add </span>
+								</button>
+							</div>
+						</div>
+						<div class="col-xl-4 col-md-6 col-12">
+							<div class="featured-card-wrap">
+								<span class="material-icons icon"> location_on </span>
+								<div class="content">
+									<h3>0</h3>
+									<p>Geofence Entries</p>
+								</div>
+								<button class="add-more-btn">
+									<span class="material-icons"> add </span>
+								</button>
+							</div>
+						</div>
+						<div class="col-xl-8 col-12">
+							<div class="card-wrap">
+								<div class="d-flex align-items-center flex-wrap justify-content-between mb-20">
+									<h2 class="card-title mb-0">Revenue</h2>
+
+									<div class="filter-revenue">
+										<select class="material-select">
+											<option selected>Filter by date</option>
+											<option value="1">Daily</option>
+											<option value="1">Weekly</option>
+											<option value="1">Monthly</option>
+											<option value="1">Yearly</option>
+										</select>
+									</div>
+								</div>
+								<ul class="revenue-info d-flex flex-wrap">
+									<li>
+										<h4>Current</h4>
+										<h2>$2540.50</h2>
+									</li>
+									<li>
+										<h4>Previous</h4>
+										<h2>$2540.50</h2>
+									</li>
+								</ul>
+
+								<div id="revenue"></div>
+							</div>
+						</div>
+						<div class="col-xl-4 col-12">
+							<div class="card-wrap">
+								<h2 class="card-title">Devices of Visitors</h2>
+
+								<div id="visitor_device"></div>
+								<ul class="visitor-list">
+									<li>
+										<strong>Mobile</strong>
+										<span class="mobile">40%</span>
+									</li>
+									<li>
+										<strong>Desktop</strong>
+										<span class="desktop">50%</span>
+									</li>
+									<li>
+										<strong>Tablet</strong>
+										<span class="tablet">10</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-12">
+							<div class="card-wrap">
+								<h2 class="card-title">5 Visitors</h2>
+
+								<table id="visit" class="table-wrapper">
+									<thead>
+										<tr>
+											<th>#</th>
+											<th class="all">User</th>
+											<th class="desktop desktop-1">Number of visit</th>
+											<th class="desktop desktop-1">Time Entered</th>
+											<th class="desktop">Visit Duration</th>
+											<th class="desktop desktop-1">Redeemed Deal</th>
+											<th class="desktop">Deal Used</th>
+											<th class="all">Gender</th>
+											<th class="all">Age</th>
+											<th class="all">Favorited</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>1</td>
+											<td>Genesis</td>
+											<td>15</td>
+											<td>4/21/2021, 9:03 AM</td>
+											<td>8 Minutes</td>
+											<td>No</td>
+											<td>150</td>
+											<td>Female</td>
+											<td>19</td>
+											<td>false</td>
+										</tr>
+										<tr>
+											<td>2</td>
+											<td>Genesis</td>
+											<td>15</td>
+											<td>4/21/2021, 9:03 AM</td>
+											<td>8 Minutes</td>
+											<td>No</td>
+											<td>150</td>
+											<td>Female</td>
+											<td>19</td>
+											<td>false</td>
+										</tr>
+										<tr>
+											<td>3</td>
+											<td>Genesis</td>
+											<td>15</td>
+											<td>4/21/2021, 9:03 AM</td>
+											<td>8 Minutes</td>
+											<td>No</td>
+											<td>150</td>
+											<td>Female</td>
+											<td>19</td>
+											<td>false</td>
+										</tr>
+										<tr>
+											<td>4</td>
+											<td>Genesis</td>
+											<td>15</td>
+											<td>4/21/2021, 9:03 AM</td>
+											<td>8 Minutes</td>
+											<td>No</td>
+											<td>150</td>
+											<td>Female</td>
+											<td>19</td>
+											<td>false</td>
+										</tr>
+										<tr>
+											<td>5</td>
+											<td>Genesis</td>
+											<td>15</td>
+											<td>4/21/2021, 9:03 AM</td>
+											<td>8 Minutes</td>
+											<td>No</td>
+											<td>150</td>
+											<td>Female</td>
+											<td>19</td>
+											<td>false</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="col-12">
+							<div class="card-wrap">
+								<h2 class="card-title">Visitors</h2>
+								<div id="most_viewed"></div>
+							</div>
+						</div>
+						<div class="col-xl-6 col-12">
+							<div class="card-wrap">
+								<h2 class="card-title">Chart 1</h2>
+								<div id="chart1"></div>
+							</div>
+						</div>
+						<div class="col-xl-6 col-12">
+							<div class="card-wrap">
+								<h2 class="card-title">Chart 2</h2>
+								<div id="chart2"></div>
+							</div>
+						</div>
+					</div>
 				</div>
 
-				<div class="row">
-					<div class="col-lg-4 col-md-6 col-12">
-						<div class="featured-card-wrap">
-							<span class="material-icons icon"> redeem </span>
-							<div class="content">
-								<h3>2104</h3>
-								<p>Total Used Coupons</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 col-12">
-						<div class="featured-card-wrap">
-							<span class="material-icons icon"> favorite </span>
-							<div class="content">
-								<h3>0</h3>
-								<p>Total Favorites</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 col-12">
-						<div class="featured-card-wrap">
-							<span class="material-icons icon"> schedule </span>
-							<div class="content">
-								<h3>0</h3>
-								<p>Total Favorites</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 col-12">
-						<div class="featured-card-wrap">
-							<span class="material-icons icon"> tour </span>
-							<div class="content">
-								<h3>0</h3>
-								<p>Total Visits</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 col-12">
-						<div class="featured-card-wrap">
-							<span class="material-icons icon"> location_on </span>
-							<div class="content">
-								<h3>0</h3>
-								<p>Geofence Entries</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 col-12">
-						<div class="featured-card-wrap">
-							<span class="material-icons icon"> location_on </span>
-							<div class="content">
-								<h3>0</h3>
-								<p>Geofence Entries</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-8 col-12">
-						<div class="card-wrap">
-							<h2 class="card-title">Revenue</h2>
-							<ul class="revenue-info d-flex flex-wrap">
-								<li>
-									<h4>Current</h4>
-									<h2>$2540.50</h2>
-								</li>
-								<li>
-									<h4>Previous</h4>
-									<h2>$2540.50</h2>
-								</li>
-							</ul>
-							<div id="revenue"></div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-12">
-						<div class="card-wrap">
-							<h2 class="card-title">Devices of Visitors</h2>
-
-							<div id="visitor_device"></div>
-							<ul class="visitor-list">
-								<li>
-									<strong>Mobile</strong>
-									<span class="mobile">40%</span>
-								</li>
-								<li>
-									<strong>Desktop</strong>
-									<span class="desktop">50%</span>
-								</li>
-								<li>
-									<strong>Tablet</strong>
-									<span class="tablet">10</span>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-12">
-						<div class="card-wrap">
-							<h2 class="card-title">5 Visitors</h2>
-
-							<table id="visit" class="table-wrapper">
-								<thead>
-									<tr>
-										<th>#</th>
-										<th class="all">User</th>
-										<th class="desktop desktop-1">Number of visit</th>
-										<th class="desktop desktop-1">Time Entered</th>
-										<th class="desktop">Visit Duration</th>
-										<th class="desktop desktop-1">Redeemed Deal</th>
-										<th>Deal Used</th>
-										<th>Gender</th>
-										<th>Age</th>
-										<th>Favorited</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>1</td>
-										<td>Genesis</td>
-										<td>15</td>
-										<td>4/21/2021, 9:03 AM</td>
-										<td>8 Minutes</td>
-										<td>No</td>
-										<td>150</td>
-										<td>Female</td>
-										<td>19</td>
-										<td>false</td>
-									</tr>
-									<tr>
-										<td>2</td>
-										<td>Genesis</td>
-										<td>15</td>
-										<td>4/21/2021, 9:03 AM</td>
-										<td>8 Minutes</td>
-										<td>No</td>
-										<td>150</td>
-										<td>Female</td>
-										<td>19</td>
-										<td>false</td>
-									</tr>
-									<tr>
-										<td>3</td>
-										<td>Genesis</td>
-										<td>15</td>
-										<td>4/21/2021, 9:03 AM</td>
-										<td>8 Minutes</td>
-										<td>No</td>
-										<td>150</td>
-										<td>Female</td>
-										<td>19</td>
-										<td>false</td>
-									</tr>
-									<tr>
-										<td>4</td>
-										<td>Genesis</td>
-										<td>15</td>
-										<td>4/21/2021, 9:03 AM</td>
-										<td>8 Minutes</td>
-										<td>No</td>
-										<td>150</td>
-										<td>Female</td>
-										<td>19</td>
-										<td>false</td>
-									</tr>
-									<tr>
-										<td>5</td>
-										<td>Genesis</td>
-										<td>15</td>
-										<td>4/21/2021, 9:03 AM</td>
-										<td>8 Minutes</td>
-										<td>No</td>
-										<td>150</td>
-										<td>Female</td>
-										<td>19</td>
-										<td>false</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-					<div class="col-12">
-						<div class="card-wrap">
-							<h2 class="card-title">Visitors</h2>
-							<div id="most_viewed"></div>
-						</div>
-					</div>
-					<div class="col-lg-6 col-12">
-						<div class="card-wrap">
-							<h2 class="card-title">Chart 1</h2>
-							<div id="chart1"></div>
-						</div>
-					</div>
-					<div class="col-lg-6 col-12">
-						<div class="card-wrap">
-							<h2 class="card-title">Chart 2</h2>
-							<div id="chart2"></div>
-						</div>
-					</div>
-				</div>
 				<footer class="footer-area">
 					<p>© Copyright . Outserved All Rights Reserved.</p>
 					<ul class="footer-menu">

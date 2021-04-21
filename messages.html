@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+		<link rel="stylesheet" href="assets/css/materialize.min.css" />
+		<link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="assets/css/default.css" />
+		<link rel="stylesheet" href="assets/css/jquery.scrollbar.css" />
+		<link rel="stylesheet" href="assets/css/dataTables.min.css" />
+		<link rel="stylesheet" href="assets/css/theme.css" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Location</title>
+	</head>
+
+	<body class="bg-grey">
+		<div class="backdrop-body-admin"></div>
+		<div class="admin-container d-flex flex-wrap">
+			<!-- sidemenu area  -->
+			<div class="sidebar-nav">
+				<span class="material-icons cancel-menu"> cancel </span>
+				<div class="logo">
+					<a href="index.html">
+						<img src="assets/images/logo.png" alt="logo" />
+					</a>
+				</div>
+				<ul class="collapsible mainmenu-wrap">
+					<li class="menuitem">
+						<a href="index.html">
+							<span class="material-icons icon">dashboard</span>
+							<span class="name">Dashboard</span>
+						</a>
+					</li>
+					<li class="menuitem">
+						<a href="geofence-visits.html">
+							<span class="material-icons icon"> view_list </span>
+							<span class="name">Geofence Visits</span>
+						</a>
+					</li>
+
+					<li class="menuitem active">
+						<a href="locations.html">
+							<span class="material-icons icon">location_on</span>
+							<span class="name">locations</span>
+						</a>
+					</li>
+
+					<li class="menuitem">
+						<a href="coupons.html">
+							<span class="material-icons icon"> redeem </span>
+							<span class="name">coupons</span>
+						</a>
+					</li>
+					<li class="menuitem">
+						<a href="messages.html">
+							<span class="material-icons icon">email</span>
+							<span class="name">messages</span>
+						</a>
+					</li>
+					<li class="menuitem-collapsible">
+						<div class="collapsible-header">
+							<span class="material-icons icon">list</span>
+							<span class="name d-flex align-items-center"
+								>Dropdown
+								<span class="material-icons"> arrow_drop_down </span>
+							</span>
+						</div>
+						<div class="collapsible-body">
+							<ul>
+								<li>
+									<a href="inbox.html"
+										>Option 1
+										<span>2</span>
+									</a>
+								</li>
+								<li>
+									<a href="inbox.html">Option 2</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<!-- sidemenu area  -->
+
+			<div class="main-container">
+				<header class="header-area">
+					<span class="material-icons d-lg-none d-block responsive-menu-admin"> menu </span>
+					<div class="profile-info">
+						<img class="image" src="assets/images/avatar.svg" alt="" />
+						<div class="content">
+							<h4>Kajihasib</h4>
+							<span>tinbleco@gmail.com </span>
+						</div>
+						<ul class="profile-dropdown">
+							<li>
+								<a href="profile.html">
+									<span class="material-icons"> person </span>
+									Profile
+								</a>
+							</li>
+							<li>
+								<a href="logout.html">
+									<span class="material-icons"> logout </span>
+									Logout
+								</a>
+							</li>
+						</ul>
+					</div>
+				</header>
+				<div class="main-content">
+					<div class="row">
+						<div class="col-lg-6 offset-lg-3">
+							<div class="card-wrap">
+								<div class="d-flex mb-15 align-items-center justify-content-between flex-wrap">
+									<h2 class="card-title mb-0">Messages</h2>
+									<a href="message-add.html" class="btnStyle waves-effect">New Message</a>
+								</div>
+								<ul class="loaction-list">
+									<li class="loaction-item">
+										<a class="loaction modal-trigger" href="#message_details">
+											<span class="material-icons icon"> email </span>
+											<div class="content">
+												<h4>Portal message from tinbleadmin</h4>
+												<p>come inside hurry</p>
+											</div>
+										</a>
+									</li>
+									<li class="loaction-item">
+										<a class="loaction modal-trigger" href="#message_details">
+											<span class="material-icons icon"> email </span>
+											<div class="content">
+												<h4>Test</h4>
+												<p>Text</p>
+											</div>
+										</a>
+									</li>
+									<li class="loaction-item">
+										<a class="loaction modal-trigger" href="#message_details">
+											<span class="material-icons icon"> email </span>
+											<div class="content">
+												<h4>3 Free Donuts!</h4>
+												<p>Come by Get N Go and show the Tinble app for 3 Free Donuts</p>
+											</div>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<footer class="footer-area">
+					<p>© Copyright . Outserved All Rights Reserved.</p>
+					<ul class="footer-menu">
+						<li><a href="#">Terms & Conditions </a></li>
+						<li><a href="#">Privacy Policy</a></li>
+					</ul>
+				</footer>
+			</div>
+		</div>
+		<div id="message_details" class="modal modal-wrapper small-modal-wrapper">
+			<span class="material-icons modal-close">close</span>
+
+			<div class="text-center">
+				<h2 class="fs-24 mb-15">Portal message from tinbleadmin</h2>
+				<p class="fs-14">come inside hurry</p>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="assets/js/materialize.min.js"></script>
+		<script type="text/javascript" src="assets/js/select2.min.js"></script>
+		<script type="text/javascript" src="assets/js/jquery.validate.min.js"></script>
+		<script type="text/javascript" src="assets/js/jquery.scrollbar.min.js"></script>
+		<script type="text/javascript" src="assets/js/highcharts.min.js"></script>
+		<script type="text/javascript" src="assets/js/dataTables.min.js"></script>
+		<script type="text/javascript" src="assets/js/apexcharts.min.js"></script>
+		<script type="text/javascript" src="assets/js/datatable.responsive.min.js"></script>
+		<script type="text/javascript" src="assets/js/scripts.js"></script>
+	</body>
+</html>

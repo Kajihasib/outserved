@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+		<link rel="stylesheet" href="assets/css/materialize.min.css" />
+		<link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="assets/css/default.css" />
+		<link rel="stylesheet" href="assets/css/jquery.scrollbar.css" />
+		<link rel="stylesheet" href="assets/css/dataTables.min.css" />
+		<link rel="stylesheet" href="assets/css/theme.css" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Geofence Visits</title>
+	</head>
+
+	<body class="bg-grey">
+		<div class="backdrop-body-admin"></div>
+		<div class="admin-container d-flex flex-wrap">
+			<!-- sidemenu area  -->
+			<div class="sidebar-nav">
+				<span class="material-icons cancel-menu"> cancel </span>
+				<div class="logo">
+					<a href="index.html">
+						<img src="assets/images/logo.png" alt="logo" />
+					</a>
+				</div>
+				<ul class="collapsible mainmenu-wrap">
+					<li class="menuitem">
+						<a href="index.html">
+							<span class="material-icons icon">dashboard</span>
+							<span class="name">Dashboard</span>
+						</a>
+					</li>
+					<li class="menuitem active">
+						<a href="geofence-visits.html">
+							<span class="material-icons icon"> view_list </span>
+							<span class="name">Geofence Visits</span>
+						</a>
+					</li>
+
+					<li class="menuitem">
+						<a href="locations.html">
+							<span class="material-icons icon">location_on</span>
+							<span class="name">locations</span>
+						</a>
+					</li>
+
+					<li class="menuitem">
+						<a href="coupons.html">
+							<span class="material-icons icon"> redeem </span>
+							<span class="name">coupons</span>
+						</a>
+					</li>
+					<li class="menuitem">
+						<a href="messages.html">
+							<span class="material-icons icon">email</span>
+							<span class="name">messages</span>
+						</a>
+					</li>
+					<li class="menuitem-collapsible">
+						<div class="collapsible-header">
+							<span class="material-icons icon">list</span>
+							<span class="name d-flex align-items-center"
+								>Dropdown
+								<span class="material-icons"> arrow_drop_down </span>
+							</span>
+						</div>
+						<div class="collapsible-body">
+							<ul>
+								<li>
+									<a href="inbox.html"
+										>Option 1
+										<span>2</span>
+									</a>
+								</li>
+								<li>
+									<a href="inbox.html">Option 2</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<!-- sidemenu area  -->
+
+			<div class="main-container">
+				<header class="header-area">
+					<span class="material-icons d-lg-none d-block responsive-menu-admin"> menu </span>
+					<div class="profile-info">
+						<img class="image" src="assets/images/avatar.svg" alt="" />
+						<div class="content">
+							<h4>Kajihasib</h4>
+							<span>tinbleco@gmail.com </span>
+						</div>
+						<ul class="profile-dropdown">
+							<li>
+								<a href="profile.html">
+									<span class="material-icons"> person </span>
+									Profile
+								</a>
+							</li>
+							<li>
+								<a href="logout.html">
+									<span class="material-icons"> logout </span>
+									Logout
+								</a>
+							</li>
+						</ul>
+					</div>
+				</header>
+				<div class="main-content">
+					<div class="welcome-wrapper d-flex flex-wrap align-items-center justify-content-between">
+						<div class="welcome-content">
+							<h4 class="fs-30 fw-600 color-white">welcome to our website</h4>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos necessitatibus
+								quasi voluptas quaerat officiis soluta!
+							</p>
+						</div>
+						<img class="welcome-img" src="assets/images/dashboard.svg" alt="dashboard" />
+					</div>
+					<div class="card-wrap">
+						<h2 class="card-title">Visits</h2>
+
+						<table id="visit" class="table-wrapper">
+							<thead>
+								<tr>
+									<th>#</th>
+									<th class="all">User</th>
+									<th class="desktop desktop-1">Number of visit</th>
+									<th class="desktop desktop-1">Time Entered</th>
+									<th class="desktop">Visit Duration</th>
+									<th class="desktop desktop-1">Redeemed Deal</th>
+									<th class="desktop">Deal Used</th>
+									<th class="all">Gender</th>
+									<th class="all">Age</th>
+									<th class="all">Favorited</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>Genesis</td>
+									<td>15</td>
+									<td>4/21/2021, 9:03 AM</td>
+									<td>8 Minutes</td>
+									<td>No</td>
+									<td>150</td>
+									<td>Female</td>
+									<td>19</td>
+									<td>false</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>Genesis</td>
+									<td>15</td>
+									<td>4/21/2021, 9:03 AM</td>
+									<td>8 Minutes</td>
+									<td>No</td>
+									<td>150</td>
+									<td>Female</td>
+									<td>19</td>
+									<td>false</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>Genesis</td>
+									<td>15</td>
+									<td>4/21/2021, 9:03 AM</td>
+									<td>8 Minutes</td>
+									<td>No</td>
+									<td>150</td>
+									<td>Female</td>
+									<td>19</td>
+									<td>false</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td>Genesis</td>
+									<td>15</td>
+									<td>4/21/2021, 9:03 AM</td>
+									<td>8 Minutes</td>
+									<td>No</td>
+									<td>150</td>
+									<td>Female</td>
+									<td>19</td>
+									<td>false</td>
+								</tr>
+								<tr>
+									<td>5</td>
+									<td>Genesis</td>
+									<td>15</td>
+									<td>4/21/2021, 9:03 AM</td>
+									<td>8 Minutes</td>
+									<td>No</td>
+									<td>150</td>
+									<td>Female</td>
+									<td>19</td>
+									<td>false</td>
+								</tr>
+								<tr>
+									<td>6</td>
+									<td>Genesis</td>
+									<td>15</td>
+									<td>4/21/2021, 9:03 AM</td>
+									<td>8 Minutes</td>
+									<td>No</td>
+									<td>150</td>
+									<td>Female</td>
+									<td>19</td>
+									<td>false</td>
+								</tr>
+								<tr>
+									<td>7</td>
+									<td>Genesis</td>
+									<td>15</td>
+									<td>4/21/2021, 9:03 AM</td>
+									<td>8 Minutes</td>
+									<td>No</td>
+									<td>150</td>
+									<td>Female</td>
+									<td>19</td>
+									<td>false</td>
+								</tr>
+								<tr>
+									<td>8</td>
+									<td>Genesis</td>
+									<td>15</td>
+									<td>4/21/2021, 9:03 AM</td>
+									<td>8 Minutes</td>
+									<td>No</td>
+									<td>150</td>
+									<td>Female</td>
+									<td>19</td>
+									<td>false</td>
+								</tr>
+								<tr>
+									<td>9</td>
+									<td>Genesis</td>
+									<td>15</td>
+									<td>4/21/2021, 9:03 AM</td>
+									<td>8 Minutes</td>
+									<td>No</td>
+									<td>150</td>
+									<td>Female</td>
+									<td>19</td>
+									<td>false</td>
+								</tr>
+								<tr>
+									<td>10</td>
+									<td>Genesis</td>
+									<td>15</td>
+									<td>4/21/2021, 9:03 AM</td>
+									<td>8 Minutes</td>
+									<td>No</td>
+									<td>150</td>
+									<td>Female</td>
+									<td>19</td>
+									<td>false</td>
+								</tr>
+								<tr>
+									<td>11</td>
+									<td>Genesis</td>
+									<td>15</td>
+									<td>4/21/2021, 9:03 AM</td>
+									<td>8 Minutes</td>
+									<td>No</td>
+									<td>150</td>
+									<td>Female</td>
+									<td>19</td>
+									<td>false</td>
+								</tr>
+								<tr>
+									<td>12</td>
+									<td>Genesis</td>
+									<td>15</td>
+									<td>4/21/2021, 9:03 AM</td>
+									<td>8 Minutes</td>
+									<td>No</td>
+									<td>150</td>
+									<td>Female</td>
+									<td>19</td>
+									<td>false</td>
+								</tr>
+								<tr>
+									<td>13</td>
+									<td>Genesis</td>
+									<td>15</td>
+									<td>4/21/2021, 9:03 AM</td>
+									<td>8 Minutes</td>
+									<td>No</td>
+									<td>150</td>
+									<td>Female</td>
+									<td>19</td>
+									<td>false</td>
+								</tr>
+								<tr>
+									<td>14</td>
+									<td>Genesis</td>
+									<td>15</td>
+									<td>4/21/2021, 9:03 AM</td>
+									<td>8 Minutes</td>
+									<td>No</td>
+									<td>150</td>
+									<td>Female</td>
+									<td>19</td>
+									<td>false</td>
+								</tr>
+								<tr>
+									<td>15</td>
+									<td>Genesis</td>
+									<td>15</td>
+									<td>4/21/2021, 9:03 AM</td>
+									<td>8 Minutes</td>
+									<td>No</td>
+									<td>150</td>
+									<td>Female</td>
+									<td>19</td>
+									<td>false</td>
+								</tr>
+								<tr>
+									<td>16</td>
+									<td>Genesis</td>
+									<td>15</td>
+									<td>4/21/2021, 9:03 AM</td>
+									<td>8 Minutes</td>
+									<td>No</td>
+									<td>150</td>
+									<td>Female</td>
+									<td>19</td>
+									<td>false</td>
+								</tr>
+								<tr>
+									<td>17</td>
+									<td>Genesis</td>
+									<td>15</td>
+									<td>4/21/2021, 9:03 AM</td>
+									<td>8 Minutes</td>
+									<td>No</td>
+									<td>150</td>
+									<td>Female</td>
+									<td>19</td>
+									<td>false</td>
+								</tr>
+								<tr>
+									<td>18</td>
+									<td>Genesis</td>
+									<td>15</td>
+									<td>4/21/2021, 9:03 AM</td>
+									<td>8 Minutes</td>
+									<td>No</td>
+									<td>150</td>
+									<td>Female</td>
+									<td>19</td>
+									<td>false</td>
+								</tr>
+								<tr>
+									<td>19</td>
+									<td>Genesis</td>
+									<td>15</td>
+									<td>4/21/2021, 9:03 AM</td>
+									<td>8 Minutes</td>
+									<td>No</td>
+									<td>150</td>
+									<td>Female</td>
+									<td>19</td>
+									<td>false</td>
+								</tr>
+								<tr>
+									<td>20</td>
+									<td>Genesis</td>
+									<td>15</td>
+									<td>4/21/2021, 9:03 AM</td>
+									<td>8 Minutes</td>
+									<td>No</td>
+									<td>150</td>
+									<td>Female</td>
+									<td>19</td>
+									<td>false</td>
+								</tr>
+								<tr>
+									<td>21</td>
+									<td>Genesis</td>
+									<td>15</td>
+									<td>4/21/2021, 9:03 AM</td>
+									<td>8 Minutes</td>
+									<td>No</td>
+									<td>150</td>
+									<td>Female</td>
+									<td>19</td>
+									<td>false</td>
+								</tr>
+								<tr>
+									<td>22</td>
+									<td>Genesis</td>
+									<td>15</td>
+									<td>4/21/2021, 9:03 AM</td>
+									<td>8 Minutes</td>
+									<td>No</td>
+									<td>150</td>
+									<td>Female</td>
+									<td>19</td>
+									<td>false</td>
+								</tr>
+								<tr>
+									<td>23</td>
+									<td>Genesis</td>
+									<td>15</td>
+									<td>4/21/2021, 9:03 AM</td>
+									<td>8 Minutes</td>
+									<td>No</td>
+									<td>150</td>
+									<td>Female</td>
+									<td>19</td>
+									<td>false</td>
+								</tr>
+								<tr>
+									<td>24</td>
+									<td>Genesis</td>
+									<td>15</td>
+									<td>4/21/2021, 9:03 AM</td>
+									<td>8 Minutes</td>
+									<td>No</td>
+									<td>150</td>
+									<td>Female</td>
+									<td>19</td>
+									<td>false</td>
+								</tr>
+								<tr>
+									<td>25</td>
+									<td>Genesis</td>
+									<td>15</td>
+									<td>4/21/2021, 9:03 AM</td>
+									<td>8 Minutes</td>
+									<td>No</td>
+									<td>150</td>
+									<td>Female</td>
+									<td>19</td>
+									<td>false</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+
+				<footer class="footer-area">
+					<p>© Copyright . Outserved All Rights Reserved.</p>
+					<ul class="footer-menu">
+						<li><a href="#">Terms & Conditions </a></li>
+						<li><a href="#">Privacy Policy</a></li>
+					</ul>
+				</footer>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="assets/js/materialize.min.js"></script>
+		<script type="text/javascript" src="assets/js/select2.min.js"></script>
+		<script type="text/javascript" src="assets/js/jquery.validate.min.js"></script>
+		<script type="text/javascript" src="assets/js/jquery.scrollbar.min.js"></script>
+		<script type="text/javascript" src="assets/js/highcharts.min.js"></script>
+		<script type="text/javascript" src="assets/js/dataTables.min.js"></script>
+		<script type="text/javascript" src="assets/js/apexcharts.min.js"></script>
+		<script type="text/javascript" src="assets/js/datatable.responsive.min.js"></script>
+		<script type="text/javascript" src="assets/js/scripts.js"></script>
+
+		<script>
+			(function (window, document, undefined) {
+				var factory = function ($, DataTable) {
+					'use strict';
+
+					$.extend(true, DataTable.defaults, {
+						dom: "<'hiddensearch'f'>" + 'tr' + "<'table-footer'lip'>",
+						renderer: 'material',
+					});
+
+					/* Default class modification */
+					$.extend(DataTable.ext.classes, {
+						sWrapper: 'dataTables_wrapper',
+						sFilterInput: 'form-control input-sm',
+						sLengthSelect: 'form-control input-sm',
+					});
+
+					/* Bootstrap paging button renderer */
+					DataTable.ext.renderer.pageButton.material = function (settings, host, idx, buttons, page, pages) {
+						var api = new DataTable.Api(settings);
+						var classes = settings.oClasses;
+						var lang = settings.oLanguage.oPaginate;
+						var btnDisplay,
+							btnClass,
+							counter = 0;
+
+						var attach = function (container, buttons) {
+							var i, ien, node, button;
+							var clickHandler = function (e) {
+								e.preventDefault();
+								if (!$(e.currentTarget).hasClass('disabled')) {
+									api.page(e.data.action).draw(false);
+								}
+							};
+
+							for (i = 0, ien = buttons.length; i < ien; i++) {
+								button = buttons[i];
+
+								if ($.isArray(button)) {
+									attach(container, button);
+								} else {
+									btnDisplay = '';
+									btnClass = '';
+
+									switch (button) {
+										case 'first':
+											btnDisplay = lang.sFirst;
+											btnClass = button + (page > 0 ? '' : ' disabled');
+											break;
+
+										case 'previous':
+											btnDisplay = '<i class="material-icons">chevron_left</i>';
+											btnClass = button + (page > 0 ? '' : ' disabled');
+											break;
+
+										case 'next':
+											btnDisplay = '<i class="material-icons">chevron_right</i>';
+											btnClass = button + (page < pages - 1 ? '' : ' disabled');
+											break;
+
+										case 'last':
+											btnDisplay = lang.sLast;
+											btnClass = button + (page < pages - 1 ? '' : ' disabled');
+											break;
+									}
+
+									if (btnDisplay) {
+										node = $('<li>', {
+											class: classes.sPageButton + ' ' + btnClass,
+											id:
+												idx === 0 && typeof button === 'string'
+													? settings.sTableId + '_' + button
+													: null,
+										})
+											.append(
+												$('<a>', {
+													href: '#',
+													'aria-controls': settings.sTableId,
+													'data-dt-idx': counter,
+													tabindex: settings.iTabIndex,
+												}).html(btnDisplay)
+											)
+											.appendTo(container);
+
+										settings.oApi._fnBindAction(
+											node,
+											{
+												action: button,
+											},
+											clickHandler
+										);
+
+										counter++;
+									}
+								}
+							}
+						};
+
+						// IE9 throws an 'unknown error' if document.activeElement is used
+						// inside an iframe or frame.
+						var activeEl;
+
+						try {
+							// Because this approach is destroying and recreating the paging
+							// elements, focus is lost on the select button which is bad for
+							// accessibility. So we want to restore focus once the draw has
+							// completed
+							activeEl = $(document.activeElement).data('dt-idx');
+						} catch (e) {}
+
+						attach($(host).empty().html('<ul class="material-pagination"/>').children('ul'), buttons);
+
+						if (activeEl) {
+							$(host)
+								.find('[data-dt-idx=' + activeEl + ']')
+								.focus();
+						}
+					};
+
+					/*
+					 * TableTools Bootstrap compatibility
+					 * Required TableTools 2.1+
+					 */
+					if (DataTable.TableTools) {
+						// Set the classes that TableTools uses to something suitable for Bootstrap
+						$.extend(true, DataTable.TableTools.classes, {
+							container: 'DTTT btn-group',
+							buttons: {
+								normal: 'btn btn-default',
+								disabled: 'disabled',
+							},
+							collection: {
+								container: 'DTTT_dropdown dropdown-menu',
+								buttons: {
+									normal: '',
+									disabled: 'disabled',
+								},
+							},
+							print: {
+								info: 'DTTT_print_info',
+							},
+							select: {
+								row: 'active',
+							},
+						});
+
+						// Have the collection use a material compatible drop down
+						$.extend(true, DataTable.TableTools.DEFAULTS.oTags, {
+							collection: {
+								container: 'ul',
+								button: 'li',
+								liner: 'a',
+							},
+						});
+					}
+				}; // /factory
+
+				// Define as an AMD module if possible
+				if (typeof define === 'function' && define.amd) {
+					define(['jquery', 'datatables'], factory);
+				} else if (typeof exports === 'object') {
+					// Node/CommonJS
+					factory(require('jquery'), require('datatables'));
+				} else if (jQuery) {
+					// Otherwise simply initialise as normal, stopping multiple evaluation
+					factory(jQuery, jQuery.fn.dataTable);
+				}
+			})(window, document);
+
+			$(document).ready(function () {
+				$('#visit').dataTable({
+					oLanguage: {
+						sStripClasses: '',
+						sSearch: '',
+						sSearchPlaceholder: 'Enter Keywords Here',
+						sInfo: '_START_ -_END_ of _TOTAL_',
+					},
+					processing: false,
+					searching: true,
+					ordering: false,
+					responsive: true,
+					bSort: true,
+					order: [0, 'asc'],
+				});
+			});
+		</script>
+	</body>
+</html>
