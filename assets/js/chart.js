@@ -8,9 +8,6 @@ $(function () {
 				data: [427, 613, 901, 257, 505, 414, 671, 160, 440, 450, 320, 245],
 			},
 		],
-		xaxis: {
-			categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-		},
 		chart: {
 			type: 'area',
 			height: 250,
@@ -166,84 +163,153 @@ $(function () {
 	};
 	let chart2 = new ApexCharts(document.querySelector('#chart2'), chart2_options);
 	chart2.render();
-	// chart 5
-	// var options = {
-	// 	series: [25, 65, 10],
-	// 	chart: {
-	// 		height: 240,
-	// 		type: 'donut',
-	// 	},
-	// 	legend: {
-	// 		position: 'bottom',
-	// 		show: false,
-	// 	},
-	// 	plotOptions: {
-	// 		pie: {
-	// 			// customScale: 0.8,
-	// 			donut: {
-	// 				size: '80%',
-	// 			},
-	// 		},
-	// 	},
-	// 	colors: ['#f02769', '#673ab7', '#ffc107'],
-	// 	dataLabels: {
-	// 		enabled: false,
-	// 	},
-	// 	labels: ['Mobile', 'Desktop', 'Tablet'],
-	// 	responsive: [
-	// 		{
-	// 			breakpoint: 480,
-	// 			options: {
-	// 				chart: {
-	// 					height: 200,
-	// 				},
-	// 				legend: {
-	// 					position: 'bottom',
-	// 				},
-	// 			},
-	// 		},
-	// 	],
-	// };
-	// var chart = new ApexCharts(document.querySelector('#chart5'), options);
-	// chart.render();
-	// // chart 5
-	// var options = {
-	// 	series: [25, 65, 10],
-	// 	chart: {
-	// 		height: 360,
-	// 		type: 'pie',
-	// 	},
-	// 	legend: {
-	// 		position: 'bottom',
-	// 		show: true,
-	// 	},
-	// 	plotOptions: {
-	// 		pie: {
-	// 			customScale: 0.9,
-	// 			donut: {
-	// 				size: '80%',
-	// 			},
-	// 		},
-	// 	},
-	// 	colors: ['#198fed', '#673ab7', '#ffc107'],
-	// 	dataLabels: {
-	// 		enabled: true,
-	// 	},
-	// 	labels: ['Male', 'Female', 'Others'],
-	// 	responsive: [
-	// 		{
-	// 			breakpoint: 480,
-	// 			options: {
-	// 				chart: {
-	// 					height: 360,
-	// 				},
-	// 				legend: {
-	// 					position: 'bottom',
-	// 				},
-	// 			},
-	// 		},
-	// 	],
-	// };
-	// var chart = new ApexCharts(document.querySelector('#chart6'), options);
-	// chart.render();
+
+	// chart 1
+	let revenue_options = {
+		series: [
+			{
+				name: 'previous',
+				data: [987, 574, 901, 365, 505, 745, 671, 364, 287, 354, 320, 987],
+			},
+			{
+				name: 'current',
+				data: [427, 613, 901, 257, 505, 414, 671, 160, 440, 450, 320, 245],
+			},
+		],
+		xaxis: {
+			categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+		},
+		chart: {
+			type: 'area',
+			height: 250,
+			toolbar: {
+				show: false,
+			},
+			zoom: {
+				enabled: true,
+			},
+			dropShadow: {
+				enabled: true,
+				top: 3,
+				left: 14,
+				blur: 4,
+				opacity: 0.12,
+				color: '#673ab7',
+			},
+			sparkline: {
+				enabled: false,
+			},
+		},
+		dataLabels: {
+			enabled: false,
+		},
+		legend: {
+			horizontalAlign: 'center',
+		},
+		markers: {
+			size: 0,
+			colors: ['#673ab7'],
+			strokeColors: '#fff',
+			strokeWidth: 2,
+			hover: {
+				size: 5,
+			},
+		},
+		dataLabels: {
+			enabled: false,
+		},
+		stroke: {
+			show: true,
+			width: 3,
+			curve: 'smooth',
+		},
+		colors: ['#ffc20d', '#2ecc71'],
+		fill: {
+			type: 'gradient',
+			colors: ['#ffc20d', '#2ecc71'],
+
+			gradient: {
+				shadeIntensity: 1,
+				opacityFrom: 0.7,
+				opacityTo: 0.9,
+				stops: [50, 100],
+			},
+		},
+		grid: {
+			show: true,
+			borderColor: '#ededed',
+			strokeDashArray: 4,
+		},
+		tooltip: {
+			theme: 'dark',
+
+			x: {
+				show: true,
+			},
+
+			marker: {
+				show: true,
+			},
+		},
+		responsive: [
+			{
+				breakpoint: 480,
+				options: {
+					chart: {
+						height: 250,
+					},
+					plotOptions: {
+						bar: {
+							columnWidth: '30%',
+						},
+					},
+				},
+			},
+		],
+	};
+	let revenue_chart = new ApexCharts(document.querySelector('#revenue'), revenue_options);
+	revenue_chart.render();
+
+	// visitor_device
+	var visitor_device_options = {
+		series: [40, 50, 10],
+		chart: {
+			height: 230,
+			type: 'pie',
+		},
+		legend: {
+			position: 'bottom',
+			show: false,
+		},
+		tooltip: {
+			theme: 'dark',
+
+			x: {
+				show: true,
+			},
+
+			marker: {
+				show: true,
+			},
+		},
+		plotOptions: {
+			pie: {
+				customScale: 0.9,
+				donut: {
+					size: '90%',
+				},
+			},
+		},
+		colors: ['#ffc20d', '#2ecc71', '#673ab7'],
+        fill: {
+			type: 'gradient',
+		
+		},
+		dataLabels: {
+			enabled: false,
+		},
+		labels: ['Mobile', 'Desktop', 'Tablet'],
+	};
+	var visitor_device_chart = new ApexCharts(document.querySelector('#visitor_device'), visitor_device_options);
+	visitor_device_chart.render();
 });
