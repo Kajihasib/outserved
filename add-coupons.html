@@ -38,14 +38,14 @@
 						</a>
 					</li>
 
-					<li class="menuitem active">
+					<li class="menuitem">
 						<a href="locations.html">
 							<span class="material-icons icon">location_on</span>
 							<span class="name">locations</span>
 						</a>
 					</li>
 
-					<li class="menuitem">
+					<li class="menuitem active">
 						<a href="coupons.html">
 							<span class="material-icons icon"> redeem </span>
 							<span class="name">coupons</span>
@@ -112,7 +112,7 @@
 					<div class="row">
 						<div class="col-lg-8 offset-lg-2">
 							<div class="card-wrap">
-								<h2 class="card-title">New Message</h2>
+								<h2 class="card-title">New Coupons</h2>
 								<form id="new_message">
 									<div class="row">
 										<div class="col-12">
@@ -121,10 +121,16 @@
 												<input placeholder="Title here" id="title" name="title" type="text" />
 											</div>
 										</div>
-										<div class="col-12">
-											<div class="input-field">
-												<label for="time">Time the message will be sent</label>
-												<input id="time" name="time" type="time" />
+
+										<div class="col-12 col-md-6">
+											<div class="select-style">
+												<label for="type">Type</label>
+												<select class="material-select" name="type" id="type">
+													<option disabled>Select type</option>
+													<option value="1">Offer</option>
+													<option value="1">Offer</option>
+													<option value="1">Offer</option>
+												</select>
 											</div>
 										</div>
 										<div class="col-12 col-md-6">
@@ -132,11 +138,50 @@
 												<label for="location">Location</label>
 												<select class="material-select" name="location" id="location">
 													<option selected>Select Location</option>
-
 													<option value="1">Texas Tech Hotspot</option>
 													<option value="1">Texas Tech South Campus Hotspot</option>
 													<option value="1">Cricket’s Avenue —— Avenue N</option>
 												</select>
+											</div>
+										</div>
+										<div class="col-12">
+											<div class="file-field input-field">
+												<div>
+													<label>Image</label>
+												</div>
+												<div class="file-upload-btn">
+													<div class="btnStyle btnStyleOutline">
+														<span>upload image</span>
+														<input type="file" />
+													</div>
+													<div class="file-path-wrapper">
+														<input class="file-path validate" type="text" readonly />
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-12 col-md-6">
+											<div class="input-field">
+												<label for="date">Date</label>
+												<input id="date" name="date" type="date" />
+											</div>
+										</div>
+										<div class="col-12 col-md-6">
+											<div class="input-field">
+												<label for="date">Time</label>
+												<input id="time" name="time" type="time" />
+											</div>
+										</div>
+										<div class="col-12 col-md-6">
+											<div class="input-field">
+												<label for="active_hour">Duration active in hours </label>
+												<input
+													id="active_hour"
+													placeholder="10"
+													name="active_hour"
+													type="text"
+													class="number"
+												/>
 											</div>
 										</div>
 										<div class="col-12 col-md-6">
@@ -152,9 +197,19 @@
 											</div>
 										</div>
 										<div class="col-12">
+											<div class="select-style">
+												<label for="repeat">Alcohol Related? </label>
+												<select class="material-select" name="repeat" id="repeat">
+													<option value="1">No</option>
+													<option value="1">Yes</option>
+												</select>
+											</div>
+										</div>
+										<div class="col-12">
 											<div class="input-field">
-												<label for="message">Message</label>
+												<label for="message">Description</label>
 												<textarea
+													placeholder="message"
 													name="message"
 													id="message"
 													class="materialize-textarea"
@@ -206,7 +261,7 @@
 					time: 'time can not be empty',
 					location: 'location can not be empty',
 					repeat: 'repeat can not be empty',
-					message: 'message can not be empty',
+					message: 'description can not be empty',
 				},
 			});
 		</script>

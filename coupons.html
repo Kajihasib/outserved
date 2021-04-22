@@ -112,108 +112,39 @@
 					<div class="row">
 						<div class="col-lg-6 offset-lg-3">
 							<div class="card-wrap">
-								<h2 class="card-title">New Coupons</h2>
-								<form id="new_message">
-									<div class="row">
-										<div class="col-12">
-											<div class="input-field">
-												<label for="title">Title</label>
-												<input placeholder="Title here" id="title" name="title" type="text" />
+								<div class="d-flex align-items-center justify-content-between flex-wrap mb-15">
+									<h2 class="card-title mb-0">Coupons</h2>
+									<a href="add-coupons.html" class="btnStyle">add Coupon</a>
+								</div>
+								<ul class="loaction-list">
+									<li class="loaction-item">
+										<a class="loaction modal-trigger" href="#coupon_details">
+											<span class="material-icons icon"> redeem </span>
+											<div class="content">
+												<h4>Hasibur Rahman</h4>
+												<p>come inside hurry</p>
 											</div>
-										</div>
-
-										<div class="col-12">
-											<div class="select-style">
-												<label for="type">Type</label>
-												<select class="material-select" name="type" id="type">
-													<option disabled>Select type</option>
-													<option value="1">Offer</option>
-													<option value="1">Offer</option>
-													<option value="1">Offer</option>
-												</select>
+										</a>
+									</li>
+									<li class="loaction-item">
+										<a class="loaction modal-trigger" href="#coupon_details">
+											<span class="material-icons icon"> redeem </span>
+											<div class="content">
+												<h4>Hasibur Rahman</h4>
+												<p>come inside hurry</p>
 											</div>
-										</div>
-										<div class="col-12">
-											<div class="select-style">
-												<label for="location">Location</label>
-												<select class="material-select" name="location" id="location">
-													<option selected>Select Location</option>
-													<option value="1">Texas Tech Hotspot</option>
-													<option value="1">Texas Tech South Campus Hotspot</option>
-													<option value="1">Cricket’s Avenue —— Avenue N</option>
-												</select>
+										</a>
+									</li>
+									<li class="loaction-item">
+										<a class="loaction modal-trigger" href="#coupon_details">
+											<span class="material-icons icon"> redeem </span>
+											<div class="content">
+												<h4>Hasibur Rahman</h4>
+												<p>come inside hurry</p>
 											</div>
-										</div>
-										<div class="col-12">
-											<div class="file-field input-field">
-												<div>
-													<label>Image</label>
-												</div>
-												<div class="file-upload-btn">
-													<div class="btnStyle btnStyleOutline">
-														<span>upload image</span>
-														<input type="file" />
-													</div>
-													<div class="file-path-wrapper">
-														<input class="file-path validate" type="text" readonly />
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="col-12 col-md-6">
-											<div class="input-field">
-												<label for="date">Date</label>
-												<input id="date" name="date" type="date" />
-											</div>
-										</div>
-										<div class="col-12 col-md-6">
-											<div class="input-field">
-												<label for="date">Time</label>
-												<input id="time" name="time" type="time" />
-											</div>
-										</div>
-										<div class="col-12">
-											<div class="input-field">
-												<label for="active_hour">Duration active in hours </label>
-												<input id="active_hour" name="active_hour" type="text" class="number" />
-											</div>
-										</div>
-										<div class="col-12">
-											<div class="select-style">
-												<label for="repeat">Repeat </label>
-												<select class="material-select" name="repeat" id="repeat">
-													<option selected>Select Repeat</option>
-													<option value="1">Daily</option>
-													<option value="1">Weekly</option>
-													<option value="1">Monthly</option>
-													<option value="1">Yearly</option>
-												</select>
-											</div>
-										</div>
-										<div class="col-12">
-											<div class="select-style">
-												<label for="repeat">Alcohol Related? </label>
-												<select class="material-select" name="repeat" id="repeat">
-													<option value="1">No</option>
-													<option value="1">Yes</option>
-												</select>
-											</div>
-										</div>
-										<div class="col-12">
-											<div class="input-field">
-												<label for="message">Description</label>
-												<textarea
-													name="message"
-													id="message"
-													class="materialize-textarea"
-												></textarea>
-											</div>
-										</div>
-										<div class="col-12">
-											<button class="btnStyle waves-effect lgBtn w-100">Submit</button>
-										</div>
-									</div>
-								</form>
+										</a>
+									</li>
+								</ul>
 							</div>
 						</div>
 					</div>
@@ -228,6 +159,127 @@
 			</div>
 		</div>
 
+		<div id="coupon_details" class="modal modal-wrapper small-modal-wrapper">
+			<span class="material-icons modal-close">close</span>
+
+			<div class="text-center">
+				<h2 class="fs-24 mb-15">Kaji Hasibur Rahman</h2>
+				<p class="fs-14 mb-10">come inside hurry</p>
+				<p class="fs-16 mb-0 color-seconday">Used time(s)</p>
+				<ul class="d-flex flex-wrap justify-content-center mt-20">
+					<li class="mr-10"><a href="#edit_coupons" class="btnStyle bg-success modal-trigger">Edit</a></li>
+					<li><button class="btnStyle bg-danger">Delete</button></li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="edit_coupons" class="modal modal-wrapper">
+			<span class="material-icons modal-close">close</span>
+			<h2 class="fs-24 text-center text-color">Edit Coupon</h2>
+			<form id="edit_coupons_form">
+				<div class="row">
+					<div class="col-12">
+						<div class="input-field">
+							<label for="title">Title</label>
+							<input placeholder="Title here" id="title" name="title" type="text" />
+						</div>
+					</div>
+
+					<div class="col-12 col-md-6">
+						<div class="select-style">
+							<label for="type">Type</label>
+							<select class="material-select" name="type" id="type">
+								<option disabled>Select type</option>
+								<option value="1">Offer</option>
+								<option value="1">Offer</option>
+								<option value="1">Offer</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-12 col-md-6">
+						<div class="select-style">
+							<label for="location">Location</label>
+							<select class="material-select" name="location" id="location">
+								<option selected>Select Location</option>
+								<option value="1">Texas Tech Hotspot</option>
+								<option value="1">Texas Tech South Campus Hotspot</option>
+								<option value="1">Cricket’s Avenue —— Avenue N</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-12">
+						<div class="file-field input-field">
+							<div>
+								<label>Image</label>
+							</div>
+							<div class="file-upload-btn">
+								<div class="btnStyle btnStyleOutline">
+									<span>upload image</span>
+									<input type="file" />
+								</div>
+								<div class="file-path-wrapper">
+									<input class="file-path validate" type="text" readonly />
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6">
+						<div class="input-field">
+							<label for="date">Date</label>
+							<input id="date" name="date" type="date" />
+						</div>
+					</div>
+					<div class="col-12 col-md-6">
+						<div class="input-field">
+							<label for="date">Time</label>
+							<input id="time" name="time" type="time" />
+						</div>
+					</div>
+					<div class="col-12 col-md-6">
+						<div class="input-field">
+							<label for="active_hour">Duration active in hours </label>
+							<input id="active_hour" placeholder="10" name="active_hour" type="text" class="number" />
+						</div>
+					</div>
+					<div class="col-12 col-md-6">
+						<div class="select-style">
+							<label for="repeat">Repeat </label>
+							<select class="material-select" name="repeat" id="repeat">
+								<option selected>Select Repeat</option>
+								<option value="1">Daily</option>
+								<option value="1">Weekly</option>
+								<option value="1">Monthly</option>
+								<option value="1">Yearly</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-12">
+						<div class="select-style">
+							<label for="repeat">Alcohol Related? </label>
+							<select class="material-select" name="repeat" id="repeat">
+								<option value="1">No</option>
+								<option value="1">Yes</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-12">
+						<div class="input-field">
+							<label for="message">Description</label>
+							<textarea
+								placeholder="message"
+								name="message"
+								id="message"
+								class="materialize-textarea"
+							></textarea>
+						</div>
+					</div>
+					<div class="col-12">
+						<button class="btnStyle waves-effect lgBtn w-100">Submit</button>
+					</div>
+				</div>
+			</form>
+		</div>
+
 		<script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
 		<script type="text/javascript" src="assets/js/materialize.min.js"></script>
 		<script type="text/javascript" src="assets/js/select2.min.js"></script>
@@ -239,7 +291,7 @@
 		<script type="text/javascript" src="assets/js/datatable.responsive.min.js"></script>
 		<script type="text/javascript" src="assets/js/scripts.js"></script>
 		<script>
-			$('#new_message').validate({
+			$('#edit_coupons_form').validate({
 				errorElement: 'span',
 				errorClass: 'error-message',
 				rules: {
