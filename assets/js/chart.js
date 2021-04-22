@@ -271,7 +271,7 @@ $(function () {
 	revenue_chart.render();
 
 	// visitor_device
-	var visitor_device_options = {
+	let visitor_device_options = {
 		series: [40, 50, 10],
 		chart: {
 			height: 230,
@@ -301,15 +301,192 @@ $(function () {
 			},
 		},
 		colors: ['#ffc20d', '#2ecc71', '#673ab7'],
-        fill: {
+		fill: {
 			type: 'gradient',
-		
 		},
 		dataLabels: {
 			enabled: false,
 		},
 		labels: ['Mobile', 'Desktop', 'Tablet'],
 	};
-	var visitor_device_chart = new ApexCharts(document.querySelector('#visitor_device'), visitor_device_options);
+	let visitor_device_chart = new ApexCharts(document.querySelector('#visitor_device'), visitor_device_options);
 	visitor_device_chart.render();
+	// profile views chart
+	let profile_view_options = {
+		series: [
+			{
+				name: 'Views',
+				data: [987, 574, 901, 365, 505, 745, 671, 364, 287, 354, 320, 987],
+			},
+		],
+		xaxis: {
+			categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+		},
+		chart: {
+			type: 'area',
+			height: 250,
+			toolbar: {
+				show: false,
+			},
+			zoom: {
+				enabled: true,
+			},
+			dropShadow: {
+				enabled: true,
+				top: 3,
+				left: 14,
+				blur: 4,
+				opacity: 0.12,
+				color: '#673ab7',
+			},
+			sparkline: {
+				enabled: false,
+			},
+		},
+		dataLabels: {
+			enabled: false,
+		},
+		legend: {
+			horizontalAlign: 'center',
+		},
+		markers: {
+			size: 0,
+			colors: ['#ffc20d'],
+			strokeColors: '#fff',
+			strokeWidth: 2,
+			hover: {
+				size: 5,
+			},
+		},
+		dataLabels: {
+			enabled: false,
+		},
+		stroke: {
+			show: true,
+			width: 3,
+			curve: 'smooth',
+		},
+		colors: ['#ffc20d', '#2ecc71'],
+		fill: {
+			type: 'gradient',
+			colors: ['#ffc20d'],
+			gradient: {
+				shadeIntensity: 1,
+				inverseColors: false,
+				opacityFrom: 0.5,
+				opacityTo: 0,
+				stops: [0, 90, 100],
+			},
+		},
+		grid: {
+			show: true,
+			borderColor: '#ededed',
+			strokeDashArray: 4,
+		},
+		tooltip: {
+			theme: 'dark',
+
+			x: {
+				show: true,
+			},
+
+			marker: {
+				show: true,
+			},
+		},
+		responsive: [
+			{
+				breakpoint: 480,
+				options: {
+					chart: {
+						height: 250,
+					},
+					plotOptions: {
+						bar: {
+							columnWidth: '30%',
+						},
+					},
+				},
+			},
+		],
+	};
+
+	let profile_view_chart = new ApexCharts(document.querySelector('#profile_view'), profile_view_options);
+	profile_view_chart.render();
+
+	let geofence_entries_options = {
+		series: [
+			{
+				name: 'Entries',
+				data: [987, 574, 901, 365, 505, 745, 671, 364, 287, 354, 320, 987],
+			},
+			{
+				name: 'Views',
+				data: [427, 613, 901, 257, 505, 414, 671, 160, 440, 450, 320, 245],
+			},
+		],
+		chart: {
+			type: 'bar',
+			height: 250,
+			toolbar: {
+				show: false,
+			},
+			zoom: {
+				enabled: true,
+			},
+			dropShadow: {
+				enabled: true,
+				top: 3,
+				left: 14,
+				blur: 4,
+				opacity: 0.12,
+				color: '#673ab7',
+			},
+			sparkline: {
+				enabled: false,
+			},
+		},
+		plotOptions: {
+			bar: {
+				horizontal: false,
+				columnWidth: '65%',
+				endingShape: 'rounded',
+			},
+		},
+		dataLabels: {
+			enabled: false,
+		},
+		stroke: {
+			show: true,
+			width: 2,
+			colors: ['transparent'],
+		},
+		xaxis: {
+			categories: ['Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+		},
+		yaxis: {
+			title: false,
+		},
+		colors: ['#ffc20d', '#2ecc71'],
+
+		grid: {
+			show: true,
+			borderColor: '#ededed',
+			strokeDashArray: 4,
+		},
+		tooltip: {
+			theme: 'dark',
+
+			x: {
+				show: true,
+			},
+
+			marker: {
+				show: true,
+			},
+		},
+	};
+
+	let geofence_entries_chart = new ApexCharts(document.querySelector('#geofence_entries'), geofence_entries_options);
+	geofence_entries_chart.render();
 });
